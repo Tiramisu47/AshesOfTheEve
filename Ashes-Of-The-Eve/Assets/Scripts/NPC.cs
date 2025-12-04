@@ -2,13 +2,14 @@ using System.Collections;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class NPC : MonoBehaviour//, IInteractable //add interaction from previous tutorial
+public class NPC : MonoBehaviour, Iinteractable
 {
     public NPCDialogue dialogueData;
     public GameObject dialoguePanel;
     public TMP_Text dialogueText, nameText;
-    //public Image portraitImage;
+    public Image portraitImage;
 
     private int dialogueIndex;
     private bool isTyping, isDialogueActive;
@@ -40,7 +41,7 @@ public class NPC : MonoBehaviour//, IInteractable //add interaction from previou
         dialogueIndex = 0;
 
         nameText.SetText(dialogueData.name);
-        //portraitImage.sprite = dialogueData.npcPortrait;
+        portraitImage.sprite = dialogueData.npcPortrait;
 
         dialoguePanel.SetActive(true);
         //PauseController.SetPause(true);
