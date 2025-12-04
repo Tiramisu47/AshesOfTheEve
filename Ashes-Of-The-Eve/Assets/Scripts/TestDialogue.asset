@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TestDialogue
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
   npcName: Princess Caroline
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 7482667652216324306, guid: 46bc646df4c831e4682014b970be8783, type: 3}
   dialogueLines:
   - Bojack
   - Bojack HUH where you at?
