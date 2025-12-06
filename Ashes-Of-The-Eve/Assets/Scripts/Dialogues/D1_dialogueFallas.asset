@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb4fb50c537e1a4d95d15a173be6249, type: 3}
+  m_Name: D1_dialogueFallas
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  npcName: D
+  npcPortrait: {fileID: -962488092458481032, guid: 3fecc17536454c14bae7a5fd4f764281, type: 3}
+  dialogueLines:
+  - "Yooo, there\u2019s my people!"
+  - Thought you two got lost at some sketchy churro stall.
+  - Alright, better late than never, dude!
+  - "Hahaha \u201CGood\u201D they say\u2026 This is epic!!!"
+  - Falla number seven and counting!
+  - Alrighty, see you around, dude!
+  autoProgressLines: 0101010101
+  endDialogueLines: 0000000001
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  autoProgressDelay: 1.5
+  choices:
+  - dialogueIndex: 1
+    choices:
+    - Hi, yeah, we just got here. There are so many people...
+    nextDialogueIndexes: 02000000
+  - dialogueIndex: 2
+    choices:
+    - Umm, have you been here long? Everything looks really good.
+    - '*stay silent*'
+    nextDialogueIndexes: 0300000005000000
