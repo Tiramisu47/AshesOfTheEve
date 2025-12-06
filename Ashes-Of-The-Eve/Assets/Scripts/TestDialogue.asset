@@ -16,11 +16,20 @@ MonoBehaviour:
   npcPortrait: {fileID: 7482667652216324306, guid: 46bc646df4c831e4682014b970be8783, type: 3}
   dialogueLines:
   - Bojack
-  - Bojack HUH where you at?
-  - I understand...
-  - But you can't ignore me forever!!!
-  autoProgressLines: 01000100
+  - Bojack HUH what are you doing?
+  - '*sigh* That''s exactly why i divorced you.'
+  - Go to rehab and stop wasting my time.
+  - I don't believe you, go to rehab
+  - Call me when you stop being a total failure.
+  autoProgressLines: 010101000100
+  endDialogueLines: 000000010001
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
   autoProgressDelay: 1.5
+  choices:
+  - dialogueIndex: 1
+    choices:
+    - Drinking
+    - Definitely NOT drinking
+    nextDialogueIndexes: 0200000004000000
